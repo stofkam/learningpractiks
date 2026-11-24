@@ -1,0 +1,57 @@
+// use prisma-8
+
+model User {
+  id String @id @onCreate(uuid())
+  name String
+  email String @unique
+  password String
+  watchlistItems WatchlistItem[]
+  movies Movie[]
+  createdAt TimestamptzString @default(now())
+  updatedAt TimestamptzString @default(now())
+}
+
+model Movie{
+  id String @id @onCreate(uuid())
+  title String
+  overview String?
+  releaseYear Int
+  genres String[] @default([])
+  runtime Int?
+  posterUrl String?
+  createdBy String
+  creator User @relation( fields: [createdBy], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  watchlistItems WatchlistItem[]
+  createdAt TimestamptzString @default(now())
+  updatedAt TimestamptzString @default(now())
+}
+
+model WatchlistItem{
+  id String @id @onCreate(uuid())
+  userId String
+  movieId String
+  movie Movie @relation(fields: [movieId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  status WatchlistStatus @default(PLANNED)
+  rating Int?
+  notes String?
+  createdAt TimestamptzString @default(now())
+  updatedAt TimestamptzString @default(now())
+  @@unique([userId,movieId])
+}
+enum WatchlistStatus {
+  PLANNED
+  WATCHING
+  COMPLETED
+  DROPPED
+}
+
+// model Post {
+//   id String @id @onCreate(uuid())
+//   title String
+//   content String
+//   authorId String
+//   author User @relation(fields: [authorId], references: [id])
+//   createdAt TimestamptzString @default(now())
+//   updatedAt TimestamptzString @default(now())
+// }

@@ -1,0 +1,57 @@
+.mainsidebarContainer{
+    flex: 0.8;
+    background-color: white;
+    
+}
+.sidebarContainer{
+    padding: 20px;
+}
+.ulContainer{
+    margin-top: 20px;
+}
+.liContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  
+}
+.liContainer p{
+     color: #434343;
+}
+.menu{
+    display: flex;
+}
+
+.adminText{
+    font-size: 20px;
+    font-weight: bold;
+}
+.itemNames{
+    font-size: 16px;
+    /* font-weight: bold; */
+    margin-left: 10px;
+}
+.scheduleContainer {
+    display: flex;
+     background-color: #f5f5f5;
+     padding:5px;
+    color: #434343;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.scheduleContainer label {
+    color: #434343;
+}
+
+
+.scheduleContainer input{
+    margin-right: 10px;
+}
+.scheduleBlock{
+    padding-top: 40px;
+}
+
+ 
+
+
+

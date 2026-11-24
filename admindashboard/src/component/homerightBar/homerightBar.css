@@ -1,0 +1,127 @@
+.mainrightBarContainer{
+    flex: 4;
+    background-color: rgba(236, 236, 236, 0.989);
+    height: auto;
+    
+}
+
+.itemContainer{
+    margin-top: 20px;
+    display: flex;
+    /* margin:  auto; */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.itemConteiner1{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 380px;
+    height: 20vh;
+    background-color: rgba(255, 255, 255, 0.989);
+    display: flex;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.taskProgress{
+    margin-top: 30px;
+    text-align: start;
+    margin-left: 10px;
+    color:rgb(58, 58, 58);
+    padding-bottom: 5px;
+}
+.taskCounter{
+    text-align: start;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    color:#82ca9d;
+    padding-bottom: 5px;
+}
+.taskCounter1{
+    text-align: start;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    color:blue;
+    padding-bottom: 5px;
+}
+.taskCounter2{
+    text-align: start;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    color:orange;
+    padding-bottom: 5px;
+}
+.currentMonth1{
+    text-align: start;
+    margin-left: 10px;
+    color:rgb(58, 58, 58);
+}
+
+.barcharContainer{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/* .subitemContainer{
+    margin-top: 10px;
+} */
+
+.middleTaskChart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.middleTaskChart p{
+    padding: 15px;
+    font-weight: 600;
+}
+.taskContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.taskChart{
+    flex:1.2;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+       display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14.5px;
+}
+.MonthlyEarning{
+    flex:4;
+    
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.top{
+    padding-top: 10px;
+}
+.taskContainerText{
+    text-align: start;
+    margin-left: 10%;
+}

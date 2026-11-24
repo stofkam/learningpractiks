@@ -1,0 +1,64 @@
+.mainnavbarContainer{
+    /* padding-top: 20px; */
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dadada;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.searchItemContainer{
+    display: flex;
+    flex: 3;
+    align-items: center;
+    background-color: #e4e2e2;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border:1px solid #afafaf;
+}
+.profileItemContainer{
+ 
+    display: flex;
+    flex: 0.5;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.logoContainer{
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.profileItems{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.dashtext{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 58px;
+}
+
+.searchInput{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    padding-left: 10px;
+}
+.profileIcon{
+   width: 30px;
+   height: 30px;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+}
